@@ -1,0 +1,82 @@
+@import '../../../styles/variable.scss';
+
+$commodity-height: 339px;
+$btn-size: 52px;
+
+.commodity {
+  background: white;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  padding: 10px;
+  .pic{
+    width: 200px;
+    height: 200px;
+    .image {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .content{
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .name {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      word-break: break-all;
+      font-size: $content-font-size;
+      padding: $block-spacing-v2 / 2 $block-spacing-v2;
+      min-height: 52px;
+      box-sizing: border-box;
+    }
+  }
+
+  .tool {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: $block-spacing-v2 / 2 0 $block-spacing-v2;
+
+    .price {
+      .sprice {
+        font-size: $price-font-size;
+        font-weight: bold;
+        color: $accent-color;
+        height: 52px;
+        padding: 0 $block-spacing-v2;
+
+        .unit {
+          font-size: $font-size-v2;
+          font-weight: normal;
+        }
+      }
+      .cprice {
+        font-size: $font-size-v2;
+        color: $placeholder-text-color;
+        text-decoration: line-through;
+        height: 30px;
+        padding: 0 $block-spacing-v2;
+        margin: $block-spacing-v1 / 2 0 0;
+      }
+    }
+
+    .btn {
+      font-size: $font-size-v6;
+      color: white;
+      width: $btn-size;
+      height: $btn-size;
+      background: $theme-color;
+      border-radius: $border-radius;
+      text-align: center;
+      line-height: $btn-size;
+      font-weight: bold;
+      margin: 0 $block-spacing-v2 0 0;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.submenulist{
+    height: 60px;
+    white-space: nowrap;
+    .item{
+        display: inline-block;
+        margin-right: 15px;
+        padding: 8px 15px;
+        font-size: 24px;
+        border-radius: 24px;
+        color: #727272;
+        &.active{
+            color: #ffffff;
+            background:#e4393c;
+        }
+    }
+}
